@@ -1,0 +1,49 @@
+.main-menu {
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: initial;
+    order: 1;
+  }
+  .navegation {
+    padding-left: 0;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 720px) {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    a {
+      padding: 10px 6px;
+      background-color: blue;
+      border-radius: 4px;
+      box-shadow: 1px 1px 4px 1px #343477;
+      cursor: pointer;
+      transition: background-color, color 300ms linear;
+
+      @media screen and (min-width: 480px) {
+        margin-right: 8px;
+      }
+
+      @media screen and (min-width: 720px) {
+        margin-right: 12px;
+      }
+
+      &.active {
+        background-color: white;
+        color: blue;
+        box-shadow: 1px 1px 4px 1px #9797ce;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

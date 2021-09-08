@@ -1,0 +1,17 @@
+@mixin flexbox($justifyContent: center, $alignItems: center) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin backgroundProps($backgroundPosition: center, $backgroundSize: cover) {
+  background-position: $backgroundPosition;
+  background-size: $backgroundSize;
+  background-repeat: no-repeat;
+}
+
+@mixin mediaQuerie($breakPoint) {
+  @media screen and (min-width: $breakPoint) {
+    @content;
+  }
+}

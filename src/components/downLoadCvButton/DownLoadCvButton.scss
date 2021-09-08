@@ -1,0 +1,19 @@
+.cv-button {
+  padding: 10px;
+  background-color: white;
+  color: rgb(3, 3, 71);
+  border: 1px solid rgb(3, 3, 71);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color, color 300ms;
+
+  &:hover {
+    background-color: rgb(3, 3, 71);
+    color: white;
+  }
+
+  @media screen and (min-width: 1024px) {
+    bottom: 60px;
+    right: 150px;
+  }
+}

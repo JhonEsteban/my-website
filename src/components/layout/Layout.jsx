@@ -1,3 +1,5 @@
+import './Layout.scss';
+
 import Header from '../header/Header';
 
 const Layout = ({ children }) => {
