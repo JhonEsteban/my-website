@@ -1,0 +1,30 @@
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .skill {
+    cursor: pointer;
+    transition: transform 400ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .react-skill {
+    transition: transform 400ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (min-width: 720px) {
+    justify-content: flex-start;
+
+    .skill {
+      margin-right: 8px;
+    }
+  }
+}

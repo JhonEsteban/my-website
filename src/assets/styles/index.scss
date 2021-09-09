@@ -67,3 +67,19 @@ a {
 .fadeIn {
   animation-name: fadeIn;
 }
+
+.app {
+  min-height: 100vh;
+
+  &.dark-mode {
+    background-color: #07070ced;
+    color: white;
+
+    .info {
+      &__title,
+      &__description {
+        color: white;
+      }
+    }
+  }
+}

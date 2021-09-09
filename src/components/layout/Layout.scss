@@ -1,20 +1,11 @@
-.app {
-  min-height: 100vh;
-
-  &.dark-mode {
-    background-color: #07070ced;
-    color: white;
+.main {
+  @media screen and (min-width: 720px) {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
-  .main {
-    @media screen and (min-width: 720px) {
-      max-width: 90%;
-      margin: 0 auto;
-    }
-
-    @media screen and (min-width: 920px) {
-      max-width: 80%;
-      margin: 0 auto;
-    }
+  @media screen and (min-width: 920px) {
+    max-width: 80%;
+    margin: 0 auto;
   }
 }
