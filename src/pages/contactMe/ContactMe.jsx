@@ -1,8 +1,12 @@
+import './ContactMe.scss';
+
+import ContactForm from '../../components/contactForm/ContactForm';
+
 const ContactMe = () => {
   return (
-    <div>
-      <h1>ContactMe Page</h1>
-    </div>
+    <section className='contact-me animated fadeIn'>
+      <ContactForm />
+    </section>
   );
 };
 
