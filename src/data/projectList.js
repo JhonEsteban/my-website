@@ -1,0 +1,58 @@
+const projectList = [
+  {
+    id: 1,
+    name: 'Rest Countries SPA',
+    description: 'Single page countries app built with React and Hooks',
+    image: 'https://i.imgur.com/1uG93Tl.jpg',
+    stack: ['react', 'hooks', 'sass', 'react router'],
+    code: 'https://github.com/JhonEsteban/Rest-Countries-SPA',
+    live: 'https://the-countries-app.netlify.app/home',
+  },
+  {
+    id: 2,
+    name: 'React Crud App',
+    description: '',
+    image: 'https://i.imgur.com/jiGF0lB.png',
+    stack: ['react', 'hooks', 'sass', 'react router'],
+    code: 'https://github.com/JhonEsteban/React-Crud-App',
+    live: 'https://react-reducer-app.netlify.app/login',
+  },
+  {
+    id: 3,
+    name: 'Loopstudios',
+    description: 'Landing page created with React and Sass',
+    image: 'https://i.imgur.com/s2EmV7m.jpg',
+    stack: ['react', 'hooks', 'sass'],
+    code: 'https://github.com/JhonEsteban/Loopstudios-Landing-Page',
+    live: 'https://jhonesteban.github.io/Loopstudios-Landing-Page',
+  },
+  {
+    id: 4,
+    name: 'Todo App',
+    description: 'To-do app created with Vanilla Js',
+    image: 'https://i.imgur.com/3Jo33my.jpg',
+    stack: ['html', 'sass', 'javascript'],
+    code: 'https://github.com/JhonEsteban/Todo-App',
+    live: 'https://jhonesteban.github.io/Todo-App',
+  },
+  {
+    id: 5,
+    name: 'Sunnyside Agency',
+    description: 'Landing page created with Html, Sass and Vanilla Js',
+    image: 'https://i.imgur.com/dHXlOaM.jpg',
+    stack: ['html', 'sass', 'javascript'],
+    code: 'https://github.com/JhonEsteban/Sunnyside-Agency',
+    live: 'https://jhonesteban.github.io/Sunnyside-Agency/src/index.html',
+  },
+  {
+    id: 6,
+    name: 'Insure Landing Page',
+    description: 'Landing page created with Html, Sass and Vanilla Js',
+    image: 'https://i.imgur.com/1ilMh62.jpg',
+    stack: ['html', 'sass', 'javascript'],
+    code: 'https://github.com/JhonEsteban/Insure-Landing-Page',
+    live: 'https://jhonesteban.github.io/Insure-Landing-Page/src/index.html',
+  },
+];
+
+export default projectList;

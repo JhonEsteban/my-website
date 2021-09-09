@@ -70,6 +70,7 @@ a {
 
 .app {
   min-height: 100vh;
+  padding-bottom: 20px;
 
   &.dark-mode {
     background-color: #07070ced;
@@ -79,6 +80,14 @@ a {
       &__title,
       &__description {
         color: white;
+      }
+    }
+
+    .project {
+      background-color: #f7f7f7;
+
+      &__content {
+        background-color: #f7f7f7;
       }
     }
   }

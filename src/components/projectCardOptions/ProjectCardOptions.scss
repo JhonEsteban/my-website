@@ -1,0 +1,33 @@
+.options {
+  margin-top: 30px;
+
+  .project-button {
+    padding: 10px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    transition: background-color, color 300ms linear;
+  }
+
+  .project-button:first-child {
+    background-color: black;
+    border: 1px solid black;
+    margin: 15px 0 10px;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  .project-button:last-child {
+    background-color: #88149c;
+    border: 1px solid #88149c;
+
+    &:hover {
+      background-color: white;
+      color: #88149c;
+    }
+  }
+}
