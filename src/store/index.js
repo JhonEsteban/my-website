@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from 'redux';
 
 import themeReducer from '../reducers/themeReducer';
+import projectsReducer from '../reducers/projectsReducer';
 
 const reducers = combineReducers({
   theme: themeReducer,
+  projects: projectsReducer,
 });
 
 const store = createStore(

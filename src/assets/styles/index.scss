@@ -76,6 +76,10 @@ a {
     background-color: #07070ced;
     color: white;
 
+    .cv-button {
+      box-shadow: 0px 0px 2px 1px #ccc;
+    }
+
     .info {
       &__title,
       &__description {
@@ -88,6 +92,17 @@ a {
 
       &__content {
         background-color: #f7f7f7;
+      }
+    }
+
+    .dropdown {
+      &__select {
+        background-color: #2d2d3aed;
+        color: white;
+
+        .first-select {
+          color: white;
+        }
       }
     }
   }
