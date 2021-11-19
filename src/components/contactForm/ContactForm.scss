@@ -27,6 +27,7 @@
     border: 1px solid blue;
     color: white;
     cursor: pointer;
+    box-shadow: 1px 1px 4px 1px #9797ce;
     transition: background-color, color 300ms linear;
 
     &:hover {

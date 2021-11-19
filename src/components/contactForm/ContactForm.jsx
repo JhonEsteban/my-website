@@ -1,11 +1,20 @@
-import './ContactForm.scss';
-
 import { useState } from 'react';
-
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
+import './ContactForm.scss';
+
+import sendEmail from '../../services/sendEmail';
+import useAlerts from '../../hooks/useAlerts';
+
+const initialState = {
+  name: '',
+  email: '',
+  description: '',
+};
+
 const ContactForm = () => {
-  const [submittedForm, setSubmittedForm] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { successAlert, loaderAlert } = useAlerts();
 
   const handleValidateForm = ({ name, email, description }) => {
     let formErros = {};
@@ -13,47 +22,45 @@ const ContactForm = () => {
     const isValidEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
 
     if (!name) {
-      formErros.name = 'Por favor ingresa un nombre';
+      formErros.name = 'Debe ingresar un nombre';
     } else if (!isValidName.test(name)) {
       formErros.name = 'El nombre no puede tener caracteres especiales';
     }
 
     if (!email) {
-      formErros.email = 'Por favor ingresa un correo';
+      formErros.email = 'Debe ingresar un correo';
     } else if (!isValidEmail.test(email)) {
-      formErros.email = 'Ingresar un correo valido';
+      formErros.email =
+        'Ingresar un correo válido, ejemplo: usuario123@gmail.com';
     }
 
     if (!description) {
-      formErros.description = 'Por favor ingresa una descripción';
+      formErros.description = 'Debe ingresar una descripción';
     }
 
     return formErros;
   };
 
   const handleSendForm = (values, { resetForm }) => {
-    console.log(values);
+    setLoading(true);
+    loaderAlert();
+
+    sendEmail(values).then((resp) => {
+      setLoading(false);
+      successAlert(resp.message);
+    });
+
     resetForm();
   };
 
   return (
     <Formik
-      initialValues={{
-        name: '',
-        email: '',
-        description: '',
-      }}
+      initialValues={initialState}
       validate={handleValidateForm}
       onSubmit={handleSendForm}
     >
       {({ errors }) => (
         <Form className='form'>
-          {submittedForm && (
-            <p style={{ color: 'green', margin: 'auto' }}>
-              Enviado con exito!!
-            </p>
-          )}
-
           <Field
             name='name'
             type='text'
@@ -65,7 +72,9 @@ const ContactForm = () => {
           <ErrorMessage
             name='name'
             component={() => (
-              <span style={{ color: 'red' }}>{errors.name}</span>
+              <span style={{ color: 'red', fontSize: '1.5rem' }}>
+                {errors.name}
+              </span>
             )}
           />
 
@@ -80,7 +89,9 @@ const ContactForm = () => {
           <ErrorMessage
             name='email'
             component={() => (
-              <span style={{ color: 'red' }}>{errors.email}</span>
+              <span style={{ color: 'red', fontSize: '1.5rem' }}>
+                {errors.email}
+              </span>
             )}
           />
 
@@ -96,12 +107,14 @@ const ContactForm = () => {
           <ErrorMessage
             name='description'
             component={() => (
-              <span style={{ color: 'red' }}>{errors.description}</span>
+              <span style={{ color: 'red', fontSize: '1.5rem' }}>
+                {errors.description}
+              </span>
             )}
           />
 
           <button className='form__button' type='submit'>
-            Enviar
+            {loading ? 'Enviando...' : 'Enviar'}
           </button>
         </Form>
       )}

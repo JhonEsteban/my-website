@@ -105,5 +105,11 @@ a {
         }
       }
     }
+
+    .form {
+      &__button {
+        box-shadow: 1px 1px 4px 1px #9797ce21;
+      }
+    }
   }
 }
