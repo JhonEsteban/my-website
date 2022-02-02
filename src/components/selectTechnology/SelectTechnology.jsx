@@ -23,6 +23,7 @@ const SelectTechnology = () => {
         <div className='dropdown-list' onClick={handleSelect}>
           <div className='dropdown-list__item'>All Projects</div>
           <div className='dropdown-list__item'>JavaScript</div>
+          <div className='dropdown-list__item'>TypeScript</div>
           <div className='dropdown-list__item'>React</div>
           <div className='dropdown-list__item'>Angular</div>
         </div>
