@@ -1,15 +1,15 @@
 import './Skills.scss';
 
-import javascriptIcon from '../../assets/images/javascript.png';
+import mongoIcon from '../../assets/images/mongo.png';
+import expressIcon from '../../assets/images/express.png';
 import simpleReactIcon from '../../assets/images/react.png';
-import reactRoutertIcon from '../../assets/images/react-router.png';
-import sassIcon from '../../assets/images/sass.png';
+import nodeIcon from '../../assets/images/node.png';
 
 const Skills = () => {
   return (
     <div className='skills'>
       <img
-        src={javascriptIcon}
+        src={mongoIcon}
         className='skill'
         width='50px'
         alt='Javascript Icon'
@@ -17,15 +17,15 @@ const Skills = () => {
       />
 
       <img
-        src={simpleReactIcon}
-        className='react-skill'
-        width='60px'
+        src={expressIcon}
+        className='skill'
+        width='50px'
         alt='React Icon'
         title='React Icon'
       />
 
       <img
-        src={reactRoutertIcon}
+        src={simpleReactIcon}
         className='skill'
         width='80px'
         alt='React Router Icon'
@@ -33,9 +33,9 @@ const Skills = () => {
       />
 
       <img
-        src={sassIcon}
+        src={nodeIcon}
         className='skill'
-        width='60px'
+        width='50px'
         alt='Sass Icon'
         title='Sass Icon'
       />

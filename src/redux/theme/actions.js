@@ -1,4 +1,4 @@
-import types from '../types';
+import types from './types';
 
 const setAppTheme = (themeState) => ({
   type: types.toggleDarkMode,

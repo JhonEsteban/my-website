@@ -1,0 +1,13 @@
+.project-list {
+  display: grid;
+  row-gap: 30px;
+
+  @media screen and (min-width: 720px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  @media screen and (min-width: 1024px) {
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

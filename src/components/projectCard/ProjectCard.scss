@@ -2,7 +2,6 @@
   width: 100%;
   min-width: 300px;
   max-width: 350px;
-  // max-height: 400px;
   border-radius: 4px;
   background-color: white;
 
@@ -17,6 +16,19 @@
   &__image {
     height: 180px;
     object-fit: cover;
+  }
+
+  &__btn {
+    margin: 20px 0 0;
+    padding: 14px 0;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
 
   &__content {

@@ -1,22 +1,22 @@
-import { useSelector } from 'react-redux';
-
 import './Projects.scss';
 
-import SelectTechnology from '../../components/selectTechnology/SelectTechnology';
-import ProjectCard from '../../components/projectCard/ProjectCard';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { getAllProjects } from '../../redux/projects/middlewares';
+
+import ProjectList from '../../components/projectList/ProjectList';
 
 const Projects = () => {
-  const { projectList } = useSelector((state) => state.projects);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllProjects());
+  }, [dispatch]);
 
   return (
     <section className='projetcs animated fadeIn'>
-      <SelectTechnology />
-
-      <div className='projetcs__content animated fadeIn'>
-        {projectList.map((project) => (
-          <ProjectCard key={project.id} {...project} />
-        ))}
-      </div>
+      <ProjectList />
     </section>
   );
 };

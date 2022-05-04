@@ -9,6 +9,7 @@ import {
 import Layout from '../components/layout/Layout';
 import AboutMe from '../pages/aboutMe/AboutMe';
 import Projects from '../pages/projects/Projects';
+import Project from '../pages/project/Project';
 import ContactMe from '../pages/contactMe/ContactMe';
 
 const AppRouter = () => {
@@ -19,6 +20,7 @@ const AppRouter = () => {
           <Switch>
             <Route exact path='/about-me' component={AboutMe} />
             <Route exact path='/projects' component={Projects} />
+            <Route exact path='/projects/:projectId' component={Project} />
             <Route exact path='/contact-me' component={ContactMe} />
             <Redirect to='/about-me' />
           </Switch>

@@ -5,12 +5,13 @@ const Information = () => {
     <>
       <h1 className='info__title'>
         <span className='name'>Jhon Esteban Herrera </span>
-        <span className='job'>Desarrollador Frontend</span>
+        <span className='job'>Desarrollador JavaScript FullStack (MERN)</span>
       </h1>
 
       <p className='info__description'>
-        Desarrollador Frontend con manejo de frameworks JavaScript y creación de
-        interfaces Responsive Web Design.
+        Apasionado por las tecnologías web, poseo habilidades en JavaScript
+        (Frontend y Backend), puedo crear interfaces Responsive Web Design y
+        aplicaciones de tipo SPA. También APIS Restful con Node.js
       </p>
     </>
   );

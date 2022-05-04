@@ -1,3 +1,33 @@
 .contact-me {
   margin: 30px 0 0;
+  display: grid;
+  text-align: center;
+  gap: 25px;
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .heading {
+    &__title {
+      font-size: 2.4rem;
+    }
+
+    &__gif {
+      margin: auto;
+      border-radius: 4px;
+    }
+  }
+
+  .footer {
+    &__title {
+      font-size: 2.4rem;
+    }
+
+    &__link {
+      font-size: 2.3rem;
+      text-decoration: underline;
+    }
+  }
 }

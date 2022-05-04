@@ -1,9 +1,14 @@
 import './ProjectCard.scss';
 
-import TechnologyCard from '../technologyCard/TechnologyCard';
-import ProjectCardOptions from '../projectCardOptions/ProjectCardOptions';
+import { useHistory } from 'react-router-dom';
 
-const ProjectCard = ({ name, image, code, live, stack }) => {
+const ProjectCard = ({ id, name, image }) => {
+  const history = useHistory();
+
+  const handleGoToProject = () => {
+    history.push(`./projects/${id}`);
+  };
+
   return (
     <article className='project'>
       <img className='project__image' src={image} alt={name} />
@@ -11,13 +16,13 @@ const ProjectCard = ({ name, image, code, live, stack }) => {
       <div className='project__content'>
         <h3 className='main-title'>{name}</h3>
 
-        <div className='stack'>
-          {stack.map((technology) => (
-            <TechnologyCard key={technology} technology={technology} />
-          ))}
-        </div>
-
-        <ProjectCardOptions code={code} live={live} />
+        <button
+          onClick={handleGoToProject}
+          className='project__btn'
+          type='button'
+        >
+          Ver más
+        </button>
       </div>
     </article>
   );

@@ -1,0 +1,61 @@
+const projectList = [
+  {
+    id: 1,
+    name: 'Task React App',
+    image: 'https://i.imgur.com/qA5vfIB.png',
+    description: `Aplicación de tareas con autenticación de usuario, operaciones CRUD para tareas
+                  por hacer y actualización del perfil de usuario (nombre, contraseña e imagen de perfil).`,
+    stack: ['react', 'react router dom', 'redux', 'react redux', 'sass'],
+    code: 'https://github.com/JhonEsteban/task-react-app',
+    live: 'https://the-task-react.vercel.app',
+  },
+  {
+    id: 2,
+    name: 'Animes Prime',
+    image: 'https://i.imgur.com/uuIwwxk.jpg',
+    description: `Aplicación para ver información de animes, mangas y personajes favoritos.`,
+    stack: ['react', 'react router dom', 'redux', 'react redux', 'firebase', 'styled components'],
+    code: 'https://github.com/JhonEsteban/animes-prime',
+    live: 'https://animes-prime.netlify.app',
+  },
+  {
+    id: 3,
+    name: 'Countries App',
+    image: 'https://i.imgur.com/1uG93Tl.jpg',
+    description: `Aplicación para ver información de los países del mundo.`,
+    stack: ['react', 'react router dom', 'redux', 'react redux', 'sass'],
+    code: 'https://github.com/JhonEsteban/countries-app',
+    live: 'https://the-countries-now.vercel.app',
+  },
+  {
+    id: 4,
+    name: 'Laptop E-commerce',
+    image: 'ttps://i.imgur.com/aWpTOTh.png',
+    description: `Frontend E-commerce de laptops, con sistema de búsqueda por nombre, 
+                  filtro por marca y carrito de compras.`,
+    stack: ['HTML5', 'sass', 'typeScript'],
+    code: 'https://github.com/JhonEsteban/laptop-ecommerce',
+    live: 'https://jhonesteban.github.io/laptop-ecommerce',
+  },
+  {
+    id: 5,
+    name: 'E-commerce M3 Challenge',
+    image: 'https://i.imgur.com/kw1iIjd.png',
+    description: `Frontend E-commerce de blusas, con sistema de filtros por tamaño,
+                  color, rango de precio, fecha de publicación y carrito de compras.`,
+    stack: ['HTML5', 'sass', 'typeScript'],
+    code: 'https://github.com/JhonEsteban/ecommerce-m3-challenge',
+    live: 'https://ecommerce-m3-challenge.netlify.app/',
+  },
+  {
+    id: 6,
+    name: 'Todo App',
+    image:  'https://i.imgur.com/3Jo33my.jpg',
+    description: `Frontend aplicación que permite crear tareas, marcarlas como completadas y eliminarlas.`,
+    stack: ['html5', 'sass', 'javascript'],
+    code: 'https://github.com/JhonEsteban/todo-app',
+    live: 'https://jhonesteban.github.io/todo-app',
+  },
+];
+
+export default projectList;

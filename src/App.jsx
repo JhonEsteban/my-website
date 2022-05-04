@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 
-import store from './store';
+import store from './redux/store';
 
 import AppRouter from './router/AppRouter';
 
