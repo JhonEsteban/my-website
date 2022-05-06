@@ -10,22 +10,23 @@
     height: 48px;
     border-width: 3px;
     border-style: dashed solid solid dotted;
-    border-color: #fff #fff transparent #fff;
+    border-color: #000 #000 transparent #000;
     border-radius: 50%;
     display: inline-block;
     position: relative;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-  }
-  .loader::after {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    left: 20px;
-    top: 31px;
-    border: 10px solid transparent;
-    border-right-color: #fff;
-    transform: rotate(-40deg);
+
+    &::after {
+      content: '';
+      box-sizing: border-box;
+      position: absolute;
+      left: 20px;
+      top: 31px;
+      border: 10px solid transparent;
+      border-right-color: #000;
+      transform: rotate(-40deg);
+    }
   }
 
   @keyframes rotation {

@@ -3,7 +3,7 @@ import projectList from './projectList';
 const api = {
   getAllProjects: () => {
     return new Promise((resolve) => {
-      setTimeout(() => resolve(projectList), 500);
+      setTimeout(() => resolve(projectList), 350);
     });
   },
 
@@ -15,7 +15,7 @@ const api = {
         (project) => project.id === projectId
       );
 
-      setTimeout(() => resolve(project), 500);
+      setTimeout(() => resolve(project), 350);
     });
   },
 };

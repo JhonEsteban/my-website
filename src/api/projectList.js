@@ -14,7 +14,14 @@ const projectList = [
     name: 'Animes Prime',
     image: 'https://i.imgur.com/uuIwwxk.jpg',
     description: `Aplicación para ver información de animes, mangas y personajes favoritos.`,
-    stack: ['react', 'react router dom', 'redux', 'react redux', 'firebase', 'styled components'],
+    stack: [
+      'react',
+      'react router dom',
+      'redux',
+      'react redux',
+      'firebase',
+      'styled components',
+    ],
     code: 'https://github.com/JhonEsteban/animes-prime',
     live: 'https://animes-prime.netlify.app',
   },
@@ -30,7 +37,7 @@ const projectList = [
   {
     id: 4,
     name: 'Laptop E-commerce',
-    image: 'ttps://i.imgur.com/aWpTOTh.png',
+    image: 'https://i.imgur.com/aWpTOTh.png',
     description: `Frontend E-commerce de laptops, con sistema de búsqueda por nombre, 
                   filtro por marca y carrito de compras.`,
     stack: ['HTML5', 'sass', 'typeScript'],
@@ -50,7 +57,7 @@ const projectList = [
   {
     id: 6,
     name: 'Todo App',
-    image:  'https://i.imgur.com/3Jo33my.jpg',
+    image: 'https://i.imgur.com/3Jo33my.jpg',
     description: `Frontend aplicación que permite crear tareas, marcarlas como completadas y eliminarlas.`,
     stack: ['html5', 'sass', 'javascript'],
     code: 'https://github.com/JhonEsteban/todo-app',

@@ -11,7 +11,12 @@ const ProjectCard = ({ id, name, image }) => {
 
   return (
     <article className='project'>
-      <img className='project__image' src={image} alt={name} />
+      <img
+        className='project__image'
+        src={image}
+        alt={`Imagen del proyecto ${name}`}
+        title={name}
+      />
 
       <div className='project__content'>
         <h3 className='main-title'>{name}</h3>

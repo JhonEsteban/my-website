@@ -1,0 +1,77 @@
+.single-project {
+  display: grid;
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    place-items: center;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 0 3px 0px #fff;
+  }
+
+  .details {
+    @media screen and (min-width: 1024px) {
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__name {
+      margin: 0;
+    }
+
+    &__description {
+      font-size: 1.6rem;
+      font-weight: 100;
+      letter-spacing: 0.5px;
+      line-height: 26px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 40px 0;
+
+      span {
+        padding: 5px 10px;
+        text-transform: capitalize;
+        background-color: blue;
+        color: white;
+        border-radius: 4px;
+      }
+    }
+
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .btn {
+        padding: 14px 6px;
+        width: 45%;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+
+        &--one {
+          background-color: black;
+        }
+
+        &--two {
+          background-color: purple;
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import types from './types';
 
 const initialState = {
-  projects: [],
-  project: null,
+  projectList: [],
+  singleProject: {},
 };
 
 const projectsReducer = (state = initialState, action) => {
@@ -10,19 +10,19 @@ const projectsReducer = (state = initialState, action) => {
     case types.getAllProjects:
       return {
         ...state,
-        projects: [...action.payload],
+        projectList: [...action.payload],
       };
 
     case types.setSingleProject:
       return {
         ...state,
-        project: action.payload,
+        singleProject: action.payload,
       };
 
     case types.removeSingleProject:
       return {
         ...state,
-        project: null,
+        singleProject: {},
       };
 
     default:

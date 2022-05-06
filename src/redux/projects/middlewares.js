@@ -7,10 +7,15 @@ import {
   removeErrorAction,
 } from '../ui/actions';
 
-import { getAllProjectsAction, setSingleProjectAction } from './actions';
+import {
+  getAllProjectsAction,
+  removeSingleProjectAction,
+  setSingleProjectAction,
+} from './actions';
 
 const getAllProjects = () => {
   return (dispatch) => {
+    dispatch(removeSingleProjectAction());
     dispatch(startLoaderAction());
 
     api

@@ -76,6 +76,20 @@ a {
     background-color: #07070ced;
     color: white;
 
+    .loader-container {
+      .loader {
+        border-color: #fff #fff transparent #fff;
+
+        &::after {
+          border-right-color: #fff;
+        }
+      }
+    }
+
+    .btn-back {
+      color: #fff;
+    }
+
     .cv-button {
       box-shadow: 0px 0px 2px 1px #ccc;
     }
@@ -109,6 +123,14 @@ a {
     .form {
       &__button {
         box-shadow: 1px 1px 4px 1px #9797ce21;
+      }
+    }
+
+    .contact-me {
+      .footer {
+        &__link {
+          color: #fff;
+        }
       }
     }
   }
