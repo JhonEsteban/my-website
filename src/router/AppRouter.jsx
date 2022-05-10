@@ -1,20 +1,21 @@
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   HashRouter,
   Switch,
   Route,
   Redirect,
 } from 'react-router-dom';
 
-import Layout from '../components/layout/Layout';
-import AboutMe from '../pages/aboutMe/AboutMe';
-import Projects from '../pages/projects/Projects';
-import Project from '../pages/project/Project';
-import ContactMe from '../pages/contactMe/ContactMe';
+import Layout from '../components/Layout';
+
+import AboutMe from '../pages/AboutMe';
+import Projects from '../pages/Projects';
+import Project from '../pages/Project';
+import ContactMe from '../pages/ContactMe';
 
 const AppRouter = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <HashRouter>
         <Layout>
           <Switch>
@@ -26,7 +27,7 @@ const AppRouter = () => {
           </Switch>
         </Layout>
       </HashRouter>
-    </Router>
+    </BrowserRouter>
   );
 };
 

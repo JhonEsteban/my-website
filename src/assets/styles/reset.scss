@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: PoppinsLight, Helvetica, sans-serif;
+  background-color: #f6f6f663;
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  padding: 0 15px;
+}
